@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella - Concerts</title>
+    <link rel="stylesheet" href="../styles/styles.css"> <!-- Include the CSS file here -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="navbar">    
+    </div>
+
+    <div id="filters">
+        <h3>Filters</h3>
+        <form id="filterForm">
+            <label for="minMaxCapacity">Minimum Max Capacity:</label>
+            <input type="number" id="minMaxCapacity" name="min_max_capacity">
+            <label for="maxMaxCapacity">Maximum Max Capacity:</label>
+            <input type="number" id="maxMaxCapacity" name="max_max_capacity">
+            <br>
+    
+            <label for="isOutdoors">Only Outdoors:</label>
+            <input type="checkbox" id="isOutdoors" name="is_outdoors">
+            <br>
+    
+            <label for="minDatetime">Minimum Datetime:</label>
+            <input type="datetime-local" id="minDatetime" name="min_datetime">
+            <label for="maxDatetime">Maximum Datetime:</label>
+            <input type="datetime-local" id="maxDatetime" name="max_datetime">
+            <br>
+    
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+            <br>
+    
+            <label for="minOriginalPrice">Minimum Original Price:</label>
+            <input type="number" id="minOriginalPrice" name="min_original_price">
+            <label for="maxOriginalPrice">Maximum Original Price:</label>
+            <input type="number" id="maxOriginalPrice" name="max_original_price">
+            <br>
+    
+            <label for="minDiscount">Minimum Discount:</label>
+            <input type="number" id="minDiscount" name="min_discount">
+            <label for="maxDiscount">Maximum Discount:</label>
+            <input type="number" id="maxDiscount" name="max_discount">
+            <br>
+    
+            <label for="minPrice">Minimum Price:</label>
+            <input type="number" id="minPrice" name="min_price">
+            <label for="maxPrice">Maximum Price:</label>
+            <input type="number" id="maxPrice" name="max_price">
+            <br>
+    
+            <input type="submit" value="Apply Filters">
+        </form>
+    </div>
+
+    <div id="concertsContainer">
+
+    </div>
+    <script src="../javascript/nav.js"></script>
+    <script src="../javascript/concerts.js"></script>
+</body>
+</html>
