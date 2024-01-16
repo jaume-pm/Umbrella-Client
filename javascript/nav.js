@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="tickets.html" class="${currentPage.includes('tickets.html') ? 'active' : ''}">Tickets</a>
         <a href="map.html" class="${currentPage.includes('map.html') ? 'active' : ''}">Map</a>
             <a href="createConcert.html" class="${currentPage.includes('createConcert.html') ? 'active' : ''}">Create Concert</a>
-            <a href="addArtist.html" class="${currentPage.includes('AddArtist.html') ? 'active' : ''}">Add Artist</a>
+            <a href="addArtist.html" class="${currentPage.includes('addArtist.html') ? 'active' : ''}">Add Artist</a>
             <a class="right" href="logout.html" id="logoutLink">Logout</a>
         `;
         navbar.innerHTML = links;
