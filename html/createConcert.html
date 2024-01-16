@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Create Concert</title>
     <link rel="stylesheet" href="../styles/styles.css"> <!-- Include the CSS file here -->
 </head>
+
 <body>
     <div class="navbar">
     </div>
@@ -41,29 +43,20 @@
             <label for="original_price">Original Price:</label>
             <input type="number" id="original_price" name="original_price" step="0.01" required><br>
 
-            <label for="discount">Discount (%):</label>
-            <input type="number" id="discount" name="discount" step="0.01" required><br>
+            <label for="max_discount">Max Discount (%):</label>
+            <input type="number" id="max_discount" name="max_discount" step="0.01" required><br>
 
             <!-- Submit button to create the concert -->
             <button type="submit">Create Concert</button>
         </form>
     </div>
 
-    <!-- Artists Selection Form -->
-    <div id="artistsForm">
-        <h2>Select Artists</h2>
-        <form id="selectArtistsForm">
-            <!-- Generate checkboxes for artists -->
-            <!-- Example: <input type="checkbox" id="artist1" name="artists[]" value="1">
-                         <label for="artist1">Artist 1</label> -->
-            <!-- Repeat for each artist -->
+    <div id="errorContainer"></div> <!-- Error container -->
 
-            <!-- Submit button to add selected artists to the concert -->
-            <button type="submit">Add Selected Artists</button>
-        </form>
-    </div>
-
-    <script src="../javascript/admin.js"></script> <!-- Include the JavaScript file for admin functionality -->
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script src="../javascript/utilities.js"></script>
+    <script src="../javascript/createConcert.js"></script> <!-- Include the JavaScript file for admin functionality -->
+
 </body>
+
 </html>
