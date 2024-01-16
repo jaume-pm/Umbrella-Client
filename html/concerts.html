@@ -8,12 +8,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="navbar">    
-    </div>
+    <div class="navbar"></div>
 
-    <div id="filters">
-        <h3>Filters</h3>
+    <div id="filters"> <h3>Filters</h3>
         <form id="filterForm">
+
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" name="artist">
+            <br>
+
             <label for="minMaxCapacity">Minimum Max Capacity:</label>
             <input type="number" id="minMaxCapacity" name="min_max_capacity">
             <label for="maxMaxCapacity">Maximum Max Capacity:</label>
@@ -54,13 +57,19 @@
             <input type="number" id="maxPrice" name="max_price">
             <br>
     
-            <input type="submit" value="Apply Filters">
+            <input type="submit" value="Search by filters" name="submit">
         </form>
     </div>
 
-    <div id="concertsContainer">
+    <div id="buttons">
+    <button id="toggleFilter"> View Filters </button>
+    <button id="searchAll"> Search All</button>
 
     </div>
+    
+    <div id="concertsContainer"></div>
+
+    <script src="../javascript/utilities.js"></script>
     <script src="../javascript/nav.js"></script>
     <script src="../javascript/concerts.js"></script>
 </body>

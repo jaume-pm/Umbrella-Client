@@ -72,10 +72,3 @@ function createConcertElement(container, concert) {
 
     container.appendChild(concertDiv);
 }
-
-// Function to get a cookie by name (similar to the previous code)
-function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
-}

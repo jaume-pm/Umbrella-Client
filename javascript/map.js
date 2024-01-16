@@ -27,32 +27,22 @@ function fetchConcertsAndAddMarkers(map, token) {
         'Authorization': `Bearer ${token}`
     };
 
-    fetch('http://127.0.0.1:8000/api/v1/concerts', {
-        method: 'GET',
+    $.ajax({
+        url: 'http://127.0.0.1:8000/api/v1/concerts',
+        type: 'GET',
         headers: headers,
-    })
-    .then(response => response.json())
-    .then(concerts => {
-        // Loop through the concerts and add markers for each concert
-        concerts.forEach(concert => {
-            if (concert.latitude && concert.longitude) {
-                // Create a marker with latitude and longitude
-                const marker = L.marker([concert.latitude, concert.longitude])
-                    .addTo(map)
-                    .bindPopup(`<strong>${concert.title}</strong><br>${concert.address}, ${concert.city}, ${concert.country}`)
-                    .openPopup();
-            }
-        });
-    })
-    .catch(error => {
-        console.error('Error fetching concerts:', error);
+        success: function(concerts) {
+            // Loop through the concerts and add markers for each concert
+            concerts.forEach(concert => {
+                    // Create a marker with latitude and longitude
+                    const marker = L.marker([concert.latitude, concert.longitude])
+                        .addTo(map)
+                        .bindPopup(`<strong>${concert.title}</strong><br>${concert.address}, ${concert.city}, ${concert.country}`)
+                        .openPopup();                
+            });
+        },
+        error: function(error) {
+            console.error('Error fetching concerts:', error);
+        }
     });
-
-    
-}
-
-function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
 }

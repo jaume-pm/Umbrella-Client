@@ -17,8 +17,7 @@ $(document).ready(function() {
 
     // Handle click on "Concerts" link
     $('#concertsLink').click(function(e) {
-       // Example usage:
-        loadHTMLContent('concerts.html', 'contentContainer');
+        loadContent('concerts.html', 'contentContainer');
         $('.nav-link').removeClass('active');
         $(this).addClass('active');
     });
@@ -39,26 +38,6 @@ $(document).ready(function() {
         $('.nav-link').removeClass('active');
         $(this).addClass('active');
     });
-
-    function loadHTMLContent(filePath, containerId) {
-        // Create a new XMLHttpRequest
-        var xhr = new XMLHttpRequest();
-        
-        // Set up a callback function to handle the response
-        xhr.onload = function() {
-            if (xhr.status === 200) {
-                // If the request was successful, inject the response into the specified container
-                document.getElementById(containerId).innerHTML = xhr.responseText;
-            } else {
-                console.error('Failed to load HTML content: ' + filePath);
-            }
-        };
-        
-        // Open and send the GET request to the local file
-        xhr.open('GET', filePath, true);
-        xhr.send();
-    }
-    
 
     // Handle click on "Logout" link
     $('#logoutLink').click(function(e) {

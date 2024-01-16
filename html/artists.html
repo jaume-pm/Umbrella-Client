@@ -20,13 +20,19 @@
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter name">
     
-            <input type="submit" value="Apply Filters">
+            <input type="submit" value="Apply Filters" name="submit">
         </form>
     </div>
 
-    <div id="artistsContainer">
-
+    <div id="buttons">
+        <button id="toggleFilter"> View Filters </button>
+        <button id="searchAll"> Search All</button>
     </div>
+
+    <div id="artistsContainer">
+    </div>
+
+    <script src="../javascript/utilities.js"></script>
     <script src="../javascript/nav.js"></script>
     <script src="../javascript/artists.js"></script>
 </body>
