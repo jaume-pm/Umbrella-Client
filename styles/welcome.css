@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.left-container {
+    flex: 1;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.button-container {
+    margin-top: 20px; /* Adjust margin as needed */
+}
+.btn{
+    margin: 20px;
+}

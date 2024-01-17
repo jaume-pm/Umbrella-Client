@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Umbrella - Concerts Platform</title>
-    <link rel="stylesheet" href="../styles/styles.css"> <!-- Include the CSS file here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/welcome.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <h1>Welcome to Umbrella - Concerts Platform</h1>
-    <div>
-        <button onclick="location.href='login.html'">Login</button>
-        <button onclick="location.href='register.html'">Register</button>
+    <div class="container-fluid">
+        <h1>Welcome to Umbrella - Concerts Platform</h1>
+        <div class="row">
+            <div class="left-container">
+                <img src="../static/umbrella.png" alt="Umbrella Logo" class="img-fluid">
+            </div>
+            <div class="right-container">
+                    <button class="btn btn-primary" onclick="location.href='login.html'">Login</button>
+                    <button class="btn btn-primary" onclick="location.href='register.html'">Register</button>
+            </div>
+        </div>
     </div>
+
+    <script src="../javascript/utilities.js"></script>
+    <script src="../javascript/nav.js"></script>
 </body>
 </html>

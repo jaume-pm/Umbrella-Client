@@ -19,9 +19,15 @@ $(document).ready(function () {
     //Artists
     const urlParams = new URLSearchParams(window.location.search);
     const artistParam = urlParams.get('artist');
+    const titleParam = urlParams.get('title');
     if (artistParam) {
         $('#artist').val(artistParam);
         $('#filterForm').submit();
+    }
+    else if(titleParam){
+        $('#title').val(titleParam);
+        $('#filterForm').submit();
+        
     }
     else{
         getConcerts();

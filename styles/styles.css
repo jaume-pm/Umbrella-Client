@@ -1,25 +1,197 @@
-/* styles.css */
+/* Import Bootstrap CSS */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
 
-/* Style the navigation bar */
+/* Custom Styles */
+
+/* Body Styles */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #495057; /* Text color */
+}
+
+/* Updated Navbar Styling */
 .navbar {
-    background-color: #333;
-    overflow: hidden;
+    background-color: #F86850; /* Orange background color for the navbar */
 }
 
 .navbar a {
-    float: left;
-    display: block;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    background-color: #F86850; /* Set background color for all navbar items */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
 .navbar a.right {
     float: right;
 }
 
+.navbar a.active {
+    background-color: #E6513B; /* Darker orange or red for the active item */
+}
+
 /* Style the "Home" button to indicate the current section */
 .active {
-    background-color: #4CAF50;
+    background-color: #F86850; /* Active section color */
+}
+
+/* Filter Section Styles */
+#filters {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+    color: #495057; /* Label text color */
+}
+
+input,
+checkbox {
+    margin-bottom: 10px;
+}
+
+/* Buttons Styles */
+#toggleFilter,
+#searchAll {
+    margin-right: 10px;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #E6513B; /* Button background color on hover */
+}
+
+/* Container Styles */
+#concertsContainer, #artistsContainer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Map Styles */
+#map {
+    height: 1000px; /* Default height for larger screens */
+}
+
+/* Responsive Styling */
+@media (max-width: 576px) {
+    .navbar a.right {
+        float: none;
+    }
+
+    .navbar a {
+        float: none;
+        text-align: center;
+    }
+
+    #filters,
+    #buttons,
+    #concertsContainer,
+    #artistsContainer {
+        margin: 10px;
+    }
+
+    form {
+        margin-bottom: 10px;
+    }
+
+    label {
+        margin-right: 5px;
+    }
+
+    #toggleFilter,
+    #searchAll {
+        margin-right: 5px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    .concert, .artist {
+        padding: 15px;
+    }
+
+    .concert button, .artist button {
+        padding: 8px 16px;
+    }
+
+    /* Adjust the map height for smaller screens */
+    #map {
+        height: 200px;
+    }
+}
+
+/* Concert and Artist Container Styles */
+.concert, .artist {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #dee2e6; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Concert and Artist Title Styles */
+.concert h2, .artist h2 {
+    color: #343a40; /* Dark text color */
+}
+
+/* Concert and Artist Information Styles */
+.concert p, .artist p {
+    margin-bottom: 10px;
+}
+
+/* Buy Tickets Button Styles */
+.concert button, .artist button {
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Add the following styles to your existing CSS file or update accordingly */
+
+body {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+/* Add more styles as needed */
+
+
+.concert button:hover, .artist button:hover {
+    background-color: #E6513B; /* Button background color on hover */
+}
+
+/* No Concerts and No Artists Message Styles */
+#concertsContainer p, #artistsContainer p {
+    font-style: italic;
+}
+
+/* Set specific size for images on computer screens */
+img {
+    max-width: 40%; /* Set the maximum width to 100% */
+    height: auto; /* Maintain the aspect ratio */
 }
