@@ -64,8 +64,8 @@ function fetchConcertsAndAddMarkers(map, token) {
                             <strong>${concert.title}</strong><br>
                             ${concert.address}, ${concert.city}, ${concert.country}<br>
                             Date & Time: ${formattedDateTime}<br>
-                            Price: ${price}<br>
-                            Discount: ${concert.discount}%
+                            Discount: ${concert.discount}% <br>
+                            Price: ${price}€
                             <button class="view-concerts-button" onclick="redirectToConcertsPage('${concert.title}')">See Full Info</button>
                         `)
                         .openPopup();

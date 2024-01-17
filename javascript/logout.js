@@ -10,5 +10,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Redirect to 'welcome.html' after 3 seconds
     setTimeout(function() {
         window.location.href = 'welcome.html';
-    }, 3000);
+    }, 2000);
 });
