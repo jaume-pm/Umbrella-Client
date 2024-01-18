@@ -9,30 +9,69 @@ body {
     color: #495057; /* Text color */
 }
 
-/* Updated Navbar Styling */
 .navbar {
-    background-color: #F86850; /* Orange background color for the navbar */
+    background-color: #F86850;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white; /* Set text color to white */
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.disabled-link {
+    pointer-events: none;
+    color: #868e96; /* Set color for disabled link */
+    text-decoration: none;
+}
+
+.hello-text {
+    margin-right: 10px; /* Adjust margin as needed */
+    justify-items: auto;
 }
 
 .navbar a {
     color: white;
-    padding: 14px 16px;
+    padding: 18px 16px; /* Adjusted padding for equal height */
     text-decoration: none;
-    background-color: #F86850; /* Set background color for all navbar items */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    background-color: #F86850;
+    transition: background-color 0.3s ease;
 }
 
 .navbar a.right {
-    float: right;
+    margin-left: auto;
 }
 
 .navbar a.active {
-    background-color: #E6513B; /* Darker orange or red for the active item */
+    background-color: #E6513B;
+}
+
+/* Add more styles as needed */
+.navbar a:hover {
+    background-color: #E6513B;
 }
 
 /* Style the "Home" button to indicate the current section */
 .active {
     background-color: #F86850; /* Active section color */
+}
+
+
+.container-main {
+    margin-left: 1%; /* Add a margin to the left of the main container */
+    margin-right: 1%; /* Add a margin to the right of the main container */
+}
+
+
+form button[type="submit"] {
+    background-color: #F86850; /* Adjust the color for form submit buttons */
+}
+
+form button[type="submit"]:hover {
+    background-color: #F86850; /* Adjust the hover color for form submit buttons */
 }
 
 /* Filter Section Styles */

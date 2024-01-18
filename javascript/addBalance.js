@@ -41,6 +41,7 @@ function addBalance() {
         dataType: 'json',
         success: function (data) {
             showBalance(data);
+            $('#addBalance').val('');
         },
         error: function (xhr, status, error) {
             console.error('Error adding funds:', xhr.responseText);
