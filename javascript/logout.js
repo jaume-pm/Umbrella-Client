@@ -9,5 +9,5 @@ document.addEventListener('DOMContentLoaded', function() {
     messageDiv.textContent = 'You have been successfully logged out.';
 
     // Redirect to 'index.html' after 3 seconds
-        window.location.href = 'index.html';
+        window.location.href = '/index.html';
 });
