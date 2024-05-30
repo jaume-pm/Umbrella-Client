@@ -46,7 +46,7 @@ $(document).ready(function () {
     function getArtists(formData = {}) {
         // Make an AJAX request to the Laravel API endpoint
         $.ajax({
-            url: 'http://127.0.0.1:8000/api/v1/artists',
+            url: 'https://umbrella.azurewebsites.net/api/v1/artists',
             type: 'GET',
             data: formData,
             headers: headers,

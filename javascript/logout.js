@@ -8,6 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const messageDiv = document.getElementById('message');
     messageDiv.textContent = 'You have been successfully logged out.';
 
-    // Redirect to 'welcome.html' after 3 seconds
-        window.location.href = 'welcome.html';
+    // Redirect to 'index.html' after 3 seconds
+        window.location.href = 'index.html';
 });

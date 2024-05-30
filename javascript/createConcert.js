@@ -18,7 +18,7 @@ $(document).ready(function() {
         };
 
         $.ajax({
-            url: 'http://localhost:8000/api/v1/concerts',
+            url: 'https://umbrella.azurewebsites.net/api/v1/concerts',
             type: 'POST',
             contentType: 'application/json',
             headers: {

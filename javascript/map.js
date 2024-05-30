@@ -27,7 +27,7 @@ function fetchConcertsAndAddMarkers(map, token) {
     };
 
     $.ajax({
-        url: 'http://127.0.0.1:8000/api/v1/concerts',
+        url: 'https://umbrella.azurewebsites.net/api/v1/concerts',
         type: 'GET',
         headers: headers,
         success: function (concerts) {

@@ -11,7 +11,7 @@ const headers = {
 function getBalance() {
     // Make an AJAX request to the Laravel API endpoint
     $.ajax({
-        url: 'http://127.0.0.1:8000/api/v1/user/balance',
+        url: 'https://umbrella.azurewebsites.net/api/v1/user/balance',
         type: 'GET',
         headers: headers,
         success: function (data) {
@@ -33,7 +33,7 @@ function addBalance() {
     let data = { balance: addFunds }; // Assuming you want to send the value as part of the request payload
 
     $.ajax({
-        url: 'http://127.0.0.1:8000/api/v1/user/balance',
+        url: 'https://umbrella.azurewebsites.net/api/v1/user/balance',
         type: 'PATCH',
         contentType: 'application/json',
         headers: headers,

@@ -8,7 +8,7 @@ $(document).ready(function() {
         };
 
         $.ajax({
-            url: 'http://localhost:8000/api/v1/login', // Change the URL to the login endpoint
+            url: 'https://umbrella.azurewebsites.net/api/v1/login', // Change the URL to the login endpoint
             type: 'POST',
             contentType: 'application/json',
             headers: {

@@ -43,7 +43,7 @@ function getFilteredConcerts() {
 function getConcerts(formData = {}) {
     // Make an AJAX request to the Laravel API endpoint
     $.ajax({
-        url: 'http://127.0.0.1:8000/api/v1/concerts',
+        url: 'https://umbrella.azurewebsites.net/api/v1/concerts',
         type: 'GET',
         data: formData,
         headers: headers,
@@ -74,7 +74,7 @@ function addArtist(concertId, artistName) {
     };
 
     $.ajax({
-        url: 'http://127.0.0.1:8000/api/v1/concerts/artist',
+        url: 'https://umbrella.azurewebsites.net/api/v1/concerts/artist',
         type: 'POST',
         contentType: 'application/json',
         headers: headers,

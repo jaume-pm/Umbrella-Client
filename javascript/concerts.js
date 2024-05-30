@@ -17,7 +17,7 @@ function buyTicket(concertId) {
     };
 
     $.ajax({
-        url: 'http://127.0.0.1:8000/api/v1/concerts/buy',
+        url: 'https://umbrella.azurewebsites.net/api/v1/concerts/buy',
         type: 'POST',
         contentType: 'application/json',
         headers: headers,
@@ -37,7 +37,7 @@ function buyTicket(concertId) {
 function getUserConcerts(){
     userConcertIds = [];
     $.ajax({
-        url: 'http://127.0.0.1:8000/api/v1/user/concerts',
+        url: 'https://umbrella.azurewebsites.net/api/v1/user/concerts',
         type: 'GET',
         headers: headers,
         dataType: 'json',
@@ -86,7 +86,7 @@ function getFilteredConcerts() {
 function getConcerts(formData = {}) {
     // Make an AJAX request to the Laravel API endpoint
     $.ajax({
-        url: 'http://127.0.0.1:8000/api/v1/concerts',
+        url: 'https://umbrella.azurewebsites.net/api/v1/concerts',
         type: 'GET',
         data: formData,
         headers: headers,
