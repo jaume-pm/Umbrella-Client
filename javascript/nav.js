@@ -41,4 +41,14 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         navbar.innerHTML = links;
     }
+    else{
+        const links = `
+        <div class="left">
+            <a href="../index.html" class="${currentPage.includes('index.html') ? 'active' : ''}">You are not logged in. Log in.</a>
+        </div>
+    `;
+    navbar.innerHTML = links;
+    }
 });
+
+

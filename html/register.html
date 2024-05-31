@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" href="..\static\umbrella.png" type="image/png">
     <title>Register</title>
 </head>
-<body>
+<body class="centered-form"> <!-- Apply the centered-form class to the body -->
     <div class="container-main">
-    <h1>Register</h1>
-    <form id="registerForm">
-        <input type="text" id="name" placeholder="Name">
-        <input type="email" id="email" placeholder="Email">
-        <input type="password" id="password" placeholder="Password">
-        <input type="number" id="balance" placeholder="Balance">
-        <button type="submit">Register</button>
-        <div id="errorContainer"></div> <!-- Error container -->
-    </form>
+        <h1>Register</h1>
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <input type="number" id="balance" placeholder="Balance">
+            <button type="submit">Register</button>
+            <div id="errorContainer"></div> <!-- Error container -->
+        </form>
+    </div>
 
     <script src="../javascript/register.js"></script>
-    </div>
 </body>
 </html>
